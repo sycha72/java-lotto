@@ -1,9 +1,5 @@
 package stringCalculator;
 
-import lotto.LottoGame;
-
-import java.util.Scanner;
-
 public class Application {
     public static  void main(String[] args) {
         String testSum = "//!\n1000!2!3!3";

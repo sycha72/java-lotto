@@ -4,9 +4,11 @@ import java.util.Objects;
 
 public class LottoNumber {
     private final int value;
+    private final int MIN_LOTTO_NUMBER = 1;
+    private final int MAX_LOTTO_NUMBER = 45;
 
     public LottoNumber(final int value) {
-        if (value < 1 || value > 45)
+        if (value < MIN_LOTTO_NUMBER || value > MAX_LOTTO_NUMBER)
             throw new IllegalArgumentException("로또번호는 1부터 45까지 입니다.");
         this.value = value;
     }
